@@ -1,0 +1,27 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "First Next.js practice project",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamzawaleed0102/HelloNextJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamzawaleed0102/HelloNextJS/issues"
+  },
+  "homepage": "https://github.com/hamzawaleed0102/HelloNextJS#readme"
+}
