@@ -3,7 +3,7 @@ import fetch from 'isomorphic-unfetch';
 import Layout from '../components/MyLayout';
 const PostLink = ({ show }) => (
     <li>
-        <Link href={`/post?title=${show.name}`} as={`/p/${show.id}`}>
+        <Link href={`/post?id=${show.id}`} as={`/p/${show.id}`}>
             <a>{show.name}</a>
         </Link>
     </li>
@@ -12,7 +12,7 @@ const Index = props => (
     <Layout>
         <h1>My Blog</h1>
         <ul>
-            {props.shows.map(show => <PostLink show={show} />)}
+            {props.shows.map(show => <PostLink key={show.id} show={show} />)}
         </ul>
     </Layout>
 )
