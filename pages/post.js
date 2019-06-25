@@ -11,8 +11,9 @@ const Post = props => (
 )
 
 Post.getInitialProps = async function (context) {
+    console.log("Fetching from server");
     const { id } = context.query;
-    const res = await fetch("https://api.tvmaze.com/shows/5951");
+    const res = await fetch(`https://api.tvmaze.com/shows/${id}`);
     const show = await res.json();
     return { show };
 };
